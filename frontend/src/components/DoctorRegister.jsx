@@ -10,7 +10,7 @@ const Register = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/register", formData);
+      const res = await axios.post("https://mern-xt3s.onrender.comapi/auth/register", formData);
       setMessage({ text: "Registration Successful! Redirecting to login...", type: "success" });
 
       setTimeout(() => navigate("/doctor-login"), 1500);
