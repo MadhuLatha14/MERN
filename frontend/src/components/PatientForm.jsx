@@ -19,7 +19,7 @@ const PatientForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("https://mern-xt3s.onrender.comapi/patients/submit", formData);
+      await axios.post("https://mern-xt3s.onrender.com/api/patients/submit", formData);
       alert("Prescription request submitted successfully");
       navigate("/");
     } catch (error) {

@@ -20,7 +20,7 @@ const DoctorDashboard = () => {
           return;
         }
   
-        const response = await axios.get("https://mern-xt3s.onrender.comapi/doctors/patients", {
+        const response = await axios.get("https://mern-xt3s.onrender.com/api/doctors/patients", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -46,7 +46,7 @@ const DoctorDashboard = () => {
   //         return;
   //       }
 
-  //       const response = await axios.get("https://mern-xt3s.onrender.comapi/doctors/patients", {
+  //       const response = await axios.get("https://mern-xt3s.onrender.com/api/doctors/patients", {
   //         headers: {
   //           Authorization: `Bearer ${token}`,
   //         },
@@ -76,7 +76,7 @@ const DoctorDashboard = () => {
       }
 
       await axios.post(
-        `https://mern-xt3s.onrender.comapi/doctors/prescribe/${selectedPatient._id}`, { prescription },
+        `https://mern-xt3s.onrender.com/api/doctors/prescribe/${selectedPatient._id}`, { prescription },
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -102,7 +102,7 @@ const DoctorDashboard = () => {
       }
 
       await axios.post(
-        `https://mern-xt3s.onrender.comapi/doctors/prescribe/${selectedPatient._id}`, { prescription },
+        `https://mern-xt3s.onrender.com/api/doctors/prescribe/${selectedPatient._id}`, { prescription },
         {
           headers: {
             Authorization: `Bearer ${token}`,
