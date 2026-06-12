@@ -46,7 +46,7 @@ const DoctorDashboard = () => {
   //         return;
   //       }
 
-  //       const response = await axios.get("https://mern-xt3s.onrender.com/api/doctors/patients", {
+  //       const response = await axios.get("https://digital-prescription-generator-back.vercel.app/api/doctors/patients", {
   //         headers: {
   //           Authorization: `Bearer ${token}`,
   //         },
